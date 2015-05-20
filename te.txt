@@ -1,0 +1,818 @@
+
+Outil de r‚sultat du systŠme d'exploitation Microsoft (R) Windows (R) v2.0
+¸ 2013 Microsoft Corporation. Tous droits r‚serv‚s.
+
+Cr‚‚ le 16/04/2015 … 15:47:26
+
+
+Donn‚es RSOP pour SDIS25\wargnierp sur PO-E03 : mode journalisation
+--------------------------------------------------------------------
+
+Configuration du systŠme d'exploitation : Station de travail membre
+Version du systŠme d'exploitation...... : 6.3.9600
+Nom du site............................ : DDSIS
+Profil itin‚rant :             \\DDSIS25-NDV\PROFILES$\wargnierp.V2
+Profil local........................... : C:\Users\wargnierp
+Connexion via une liaison lente ? : Non
+
+
+ParamŠtre de l'ordinateur
+--------------------------
+    CN=PO-E03,OU=Ordinateurs,OU=DIR,DC=sdis25,DC=lan
+    Heure de la derniŠre application de la strat‚gie de groupe : 16/04/2015 … 14:34:13
+    Strat‚gie de groupe appliqu‚e depuis :      DDSIS25-01.sdis25.lan
+    Seuil de liaison lente dans la strat‚gie de groupe :   500 kbps
+    Nom du domaine.........................ÿ: SDIS25
+    Type de domaine........................ : Windows 2008 ou sup‚rieur
+
+    Objets Strat‚gie de groupe appliqu‚s
+    -------------------------------------
+        Default Domain Policy
+        Strategie mot de passe
+        Autorisation administrateur profil utilisateurs
+        Certificat de s‚curit‚
+        desactivationUAC
+        Firewall
+        deploiimprimante_GTO_DIR_CS
+        Lancement intranet
+        SUS
+        Deploiment Agent SSO Client WatchGuard
+        Forcer utilisation profil local
+
+    Les objets strat‚gie de groupe n'ont pas ‚t‚ appliqu‚s
+    car ils ont ‚t‚ refus‚s
+    -----------------------------------------------------------------------------------
+        Strat‚gie de groupe locale
+          Filtrage :  Non appliqu‚ (vide)
+
+    L'ordinateur fait partie des groupes de s‚curit‚ suivants
+    ---------------------------------------------------------
+        Administrateurs
+        Tout le monde
+        Utilisateurs
+        RESEAU
+        Utilisateurs authentifi‚s
+        Cette organisation
+        PO-E03$
+        Ordinateurs du domaine
+        Niveau obligatoire systŠme
+        
+    Jeu de strat‚gies r‚sultant pour l'ordinateur
+    ----------------------------------------------
+
+        Installations des logiciels
+        ---------------------------
+            N/A
+
+        Scripts de d‚marrage
+        --------------------
+                GPO : Deploiment Agent SSO Client WatchGuard
+                Nom :         WG_authentification_client.bat
+                ParamŠtres :   
+                DerniŠre ex‚cution : Ce script n'a pas encore ‚t‚ ex‚cut‚.
+
+        Scripts d'arrˆt
+        ---------------
+            N/A
+
+        Strat‚gies de comptes
+        ---------------------
+                GPO : Strategie mot de passe
+                Strat‚gie :            MaximumPasswordAge
+                ParamŠtre de l'ordinateur :  180
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            MinimumPasswordAge
+                ParamŠtre de l'ordinateur :  N/A
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            PasswordHistorySize
+                ParamŠtre de l'ordinateur :  6
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            MinimumPasswordLength
+                ParamŠtre de l'ordinateur :  6
+
+        Strat‚gie d'audit
+        -----------------
+                GPO : Default Domain Policy
+                Strat‚gie :            AuditAccountLogon
+                ParamŠtre de l'ordinateur :  Success
+
+                GPO : Default Domain Policy
+                Strat‚gie :            AuditLogonEvents
+                ParamŠtre de l'ordinateur :  Success, Failure
+
+        Droits de l'utilisateur
+        -----------------------
+                GPO : Default Domain Policy
+                Strat‚gie :            DenyRemoteInteractiveLogonRight
+                ParamŠtre de l'ordinateur :  task
+                                   
+                GPO : Default Domain Policy
+                Strat‚gie :            DenyInteractiveLogonRight
+                ParamŠtre de l'ordinateur :  task
+                                   
+                GPO : Default Domain Policy
+                Strat‚gie :            BatchLogonRight
+                ParamŠtre de l'ordinateur :  administrateur
+                                   oxio
+                                   SDIS25\etl
+                                   SDIS25\etl2
+                                   SDIS25\etl3
+                                   SDIS25\moreaud
+                                   SDIS25\oxio
+                                   SDIS25\protect
+                                   SDIS25\sauvegarde
+                                   SDIS25\task
+                                   
+                GPO : Default Domain Policy
+                Strat‚gie :            ServiceLogonRight
+                ParamŠtre de l'ordinateur :  SDIS25\task
+                                   SDIS25\sauvegarde
+                                   SDIS25\protect
+                                   SDIS25\oxio
+                                   SDIS25\etl3
+                                   SDIS25\etl2
+                                   SDIS25\etl
+                                   oxio
+                                   administrateur
+                                   
+        Options de s‚curit‚
+        -------------------
+                GPO : Strategie mot de passe
+                Strat‚gie :            PasswordComplexity
+                ParamŠtre de l'ordinateur :  Activ‚
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            ClearTextPassword
+                ParamŠtre de l'ordinateur :  Non activ‚
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            @wsecedit.dll,-59067
+                Nom de valeur :         MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinServerSec
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : desactivationUAC
+                Strat‚gie :            @appinfo.dll,-200
+                Nom de valeur :         MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            @wsecedit.dll,-59059
+                Nom de valeur :         MACHINE\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            @wsecedit.dll,-59066
+                Nom de valeur :         MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            @wsecedit.dll,-59121
+                Nom de valeur :         MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters\SupportedEncryptionTypes
+                ParamŠtre de l'ordinateur :  31
+
+                GPO : desactivationUAC
+                Strat‚gie :            @appinfo.dll,-202
+                Nom de valeur :         MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : desactivationUAC
+                Strat‚gie :            @appinfo.dll,-208
+                Nom de valeur :         MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : desactivationUAC
+                Strat‚gie :            @appinfo.dll,-203
+                Nom de valeur :         MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA
+                ParamŠtre de l'ordinateur :  0
+
+                GPO : Strategie mot de passe
+                Strat‚gie :            @wsecedit.dll,-59133
+                Nom de valeur :         MACHINE\System\CurrentControlSet\Control\Lsa\UseMachineId
+                ParamŠtre de l'ordinateur :  1
+
+            N/A
+
+        ParamŠtres du journal d'‚v‚nements
+        ----------------------------------
+            N/A
+
+        Groupes restreints
+        ------------------
+            N/A
+
+        Services systŠme
+        ----------------
+            N/A
+
+        ParamŠtres du Registre
+        ----------------------
+                GPO : Default Domain Policy
+                Nom de l'objet : MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost
+
+        ParamŠtres du systŠme de fichiers
+        ---------------------------------
+                GPO : Default Domain Policy
+                Nom de l'objet : C:\WINDOWS\TASKS
+
+        Strat‚gies de cl‚ publique
+        --------------------------
+            N/A
+
+        ModŠles d'administration
+        ------------------------
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GpNetworkStartTimeoutPolicyValue
+                tat :       D‚sactiv‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowInboundTimestampRequest
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\UpdatePromptSettings
+                tat :       D‚sactiv‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\WUStatusServer
+                Valeurÿ:       104, 0, 116, 0, 116, 0, 112, 0, 58, 0, 47, 0, 47, 0, 68, 0, 68, 0, 83, 0, 73, 0, 83, 0, 50, 0, 53, 0, 45, 0, 87, 0, 83, 0, 85, 0, 83, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\Windows\Network Connections\NC_ShowSharedAccessUI
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowRedirect
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Autorisation administrateur profil utilisateurs
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\AddAdminGroupToRUP
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\RemoteDesktop\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\InForest
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions
+                Valeurÿ:       4, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{5794DAFD-BE60-433f-88A2-1A31939AC01F}\BackgroundPriorityLevel
+                Valeurÿ:       3, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowInboundRouterRequest
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Lancement intranet
+                ID de dossierÿ: Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableStartupSound
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{A2E30F80-D7DE-11d2-BBDE-00C04F86AE3B}\NoBackgroundPolicy
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{A2E30F80-D7DE-11d2-BBDE-00C04F86AE3B}\NoGPOListChanges
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\RemoteAdminSettings\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Forcer utilisation profil local
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\LocalProfile
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Lancement intranet
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GpNetworkStartTimeoutPolicyValue
+                Valeurÿ:       2, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowOutboundSourceQuench
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\WUServer
+                Valeurÿ:       104, 0, 116, 0, 116, 0, 112, 0, 58, 0, 47, 0, 47, 0, 68, 0, 68, 0, 83, 0, 73, 0, 83, 0, 50, 0, 53, 0, 45, 0, 87, 0, 83, 0, 85, 0, 83, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Certificat de s‚curit‚
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Terminal Services\TrustedCertThumbprints
+                Valeurÿ:       14, 32, 66, 0, 65, 0, 51, 0, 65, 0, 65, 0, 49, 0, 56, 0, 48, 0, 57, 0, 66, 0, 49, 0, 48, 0, 51, 0, 57, 0, 65, 0, 52, 0, 69, 0, 50, 0, 65, 0, 48, 0, 54, 0, 68, 0, 52, 0, 55, 0, 56, 0, 51, 0, 51, 0, 67, 0, 52, 0, 52, 0, 69, 0, 53, 0, 50, 0, 50, 0, 69, 0, 52, 0, 66, 0, 69, 0, 67, 0, 69, 0, 44, 0, 97, 0, 53, 0, 57, 0, 54, 0, 54, 0, 101, 0, 101, 0, 55, 0, 51, 0, 53, 0, 57, 0, 57, 0, 97, 0, 98, 0, 101, 0, 102, 0, 100, 0, 57, 0, 51, 0, 51, 0, 101, 0, 97, 0, 57, 0, 98, 0, 52, 0, 98, 0, 101, 0, 97, 0, 48, 0, 57, 0, 102, 0, 97, 0, 52, 0, 55, 0, 97, 0, 102, 0, 48, 0, 56, 0, 98, 0, 49, 0, 44, 0, 14, 32, 101, 0, 49, 0, 98, 0, 55, 0, 50, 0, 49, 0, 53, 0, 100, 0, 49, 0, 50, 0, 99, 0, 99, 0, 50, 0, 54, 0, 54, 0, 101, 0, 101, 0, 98, 0, 55, 0, 99, 0, 100, 0, 48, 0, 53, 0, 57, 0, 102, 0, 100, 0, 100, 0, 55, 0, 53, 0, 52, 0, 99, 0, 56, 0, 100, 0, 55, 0, 100, 0, 98, 0, 48, 0, 101, 0, 101, 0, 51, 0, 44, 0, 14, 32, 57, 0, 56, 0, 57, 0, 49, 0, 68, 0, 50, 0, 66, 0, 50, 0, 57, 0, 66, 0, 52, 0, 49, 0, 67, 0, 51, 0, 69, 0, 56, 0, 51, 0, 52, 0, 54, 0, 65, 0, 69, 0, 50, 0, 54, 0, 53, 0, 67, 0, 70, 0, 66, 0, 52, 0, 69, 0, 67, 0, 49, 0, 48, 0, 70, 0, 65, 0, 70, 0, 49, 0, 68, 0, 49, 0, 52, 0, 53, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\PackagePointAndPrintOnly
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\DetectionFrequencyEnabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Lancement intranet
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\UserPolicyMode
+                Valeurÿ:       2, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\Windows\Network Connections\NC_PersonalFirewallConfig
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowOutboundTimeExceeded
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{5794DAFD-BE60-433f-88A2-1A31939AC01F}\NoGPOListChanges
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\DetectionFrequency
+                Valeurÿ:       5, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\EnableFirewall
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\TrustedServers
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowOutboundDestinationUnreachable
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\PackagePointAndPrintServerList
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Internet Explorer\Main\EnableAutoUpgrade
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\Restricted
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2201
+                Valeurÿ:       3, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Microsoft\Windows\CurrentVersion\Policies\Ext\NoFirsttimeprompt
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\TargetGroupEnabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\TargetGroup
+                Valeurÿ:       83, 0, 116, 0, 97, 0, 116, 0, 105, 0, 111, 0, 110, 0, 115, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Internet Explorer\DomainSuggestion\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowInboundEchoRequest
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoSplash
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\ServerList
+                tat :       D‚sactiv‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Lancement intranet
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\ProcessTSUserLogonAsync
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Lancement intranet
+                ID de dossierÿ: Software\Microsoft\Windows\CurrentVersion\Policies\System\RunStartupScriptSync
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\FileAndPrint\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 44, 0, 42, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{827D319E-6EAC-11D2-A4EA-00C04F79F83A}\NoGPOListChanges
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 44, 0, 42, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowOutboundPacketTooBig
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{5794DAFD-BE60-433f-88A2-1A31939AC01F}\
+                Valeurÿ:       68, 0, 114, 0, 105, 0, 118, 0, 101, 0, 32, 0, 77, 0, 97, 0, 112, 0, 115, 0, 32, 0, 80, 0, 111, 0, 108, 0, 105, 0, 99, 0, 121, 0, 32, 0, 80, 0, 114, 0, 111, 0, 99, 0, 101, 0, 115, 0, 115, 0, 105, 0, 110, 0, 103, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{827D319E-6EAC-11D2-A4EA-00C04F79F83A}\NoBackgroundPolicy
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : desactivationUAC
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GpNetworkStartTimeoutPolicyValue
+                tat :       D‚sactiv‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\RemoteDesktop\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoAutorun
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\FileAndPrint\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDriveTypeAutoRun
+                Valeurÿ:       255, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\FileAndPrint\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 44, 0, 42, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\NoWarningNoElevationOnInstall
+                tat :       D‚sactiv‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Internet Explorer\Main\DisableFirstRunCustomize
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{A2E30F80-D7DE-11d2-BBDE-00C04F86AE3B}\NoSlowLink
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Internet Explorer\Main\WindowsSearch\EnabledScopes
+                Valeurÿ:       5, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallDay
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowOutboundParameterProblem
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_zones_map_edit
+                tat :       D‚sactiv‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallTime
+                Valeurÿ:       12, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings\AllowInboundMaskRequest
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Default Domain Policy
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1200
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\FileAndPrint\Enabled
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Firewall
+                ID de dossierÿ: SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\RemoteAdminSettings\RemoteAddresses
+                Valeurÿ:       34, 0, 42, 0, 34, 0, 44, 0, 42, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Group Policy\{5794DAFD-BE60-433f-88A2-1A31939AC01F}\NoSlowLink
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\RegisterSpoolerRemoteRpcEndPoint
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Strategie mot de passe
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GroupPolicyMinTransferRate
+                tat :       D‚sactiv‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoRebootWithLoggedOnUsers
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+
+PARAMÔTRES UTILISATEURS
+------------------------
+    CN=Wargnier Pierre,OU=GGOSCESYSINFORMATIONRESEAU,OU=GPTGESTIONOPERATIONNELLE,OU=DIR,DC=sdis25,DC=lan
+    Heure de la derniŠre application de la strat‚gie de groupe : 16/04/2015 … 15:31:40
+    Strat‚gie de groupe appliqu‚e depuis :      DDSIS25-01.sdis25.lan
+    Seuil de liaison lente dans la strat‚gie de groupe :   0 kbps
+    Nom du domaineÿ:                        SDIS25
+    Type de domaine :                        Windows 2008 ou sup‚rieur
+    
+    Objets Strat‚gie de groupe appliqu‚s
+    -------------------------------------
+        Certificat de s‚curit‚
+        ecran veille automatique 15
+        deploiimprimante_GTO_DIR_CS
+        Lancement intranet
+        signatures
+        SUS
+
+    Les objets strat‚gie de groupe n'ont pas ‚t‚ appliqu‚s
+    car ils ont ‚t‚ refus‚s
+    -----------------------------------------------------------------------------------
+        internet explorer
+          Filtrage :  Refus‚ (S‚curit‚)
+
+        Default Domain Policy
+          Filtrage :  Refus‚ (S‚curit‚)
+
+        Strat‚gie de groupe locale
+          Filtrage :  Non appliqu‚ (vide)
+
+        Firewall
+          Filtrage :  Non appliqu‚ (raison inconnue)
+
+        Strategie mot de passe
+          Filtrage :  Refus‚ (S‚curit‚)
+
+        acces distant
+          Filtrage :  Refus‚ (S‚curit‚)
+
+    L'utilisateur fait partie des groupes de s‚curit‚ suivants
+    ----------------------------------------------------------
+        Utilisa. du domaine
+        Tout le monde
+        Device Administrators
+        Administrateurs
+        Utilisateurs
+        INTERACTIF
+        OUVERTURE DE SESSION DE CONSOLE
+        Utilisateurs authentifi‚s
+        Cette organisation
+        LOCAL
+        UtilisateursNDV
+        SSIR
+        DDSISTous
+        AccŠs NAS commun
+        GOperat
+        AccŠs SIR d‚concentr‚
+        WWW.ssir
+        Acces TSWeb
+        Admins du domaine
+        WWWsdis25
+        SSLVPN-Users
+        .DDSIS.Alerte exploitation
+        Groupe de r‚plication dont le mot de passe RODC est refus‚
+        DnsAdmins
+        Niveau obligatoire ‚lev‚
+        
+    L'utilisateur dispose des privilŠges de s‚curit‚ suivants
+    ---------------------------------------------------------
+
+        Contourner la v‚rification de parcours
+        G‚rer le journal d'audit et de s‚curit‚
+        Sauvegarder les fichiers et les r‚pertoires
+        Restaurer les fichiers et les r‚pertoires
+        Modifier l'heure systŠme
+        Arrˆter le systŠme
+        Forcer l'arrˆt … partir d'un systŠme distant
+        Prendre possession de fichiers ou d'autres objets
+        D‚boguer les programmes
+        Modifier les valeurs de l'environnement du microprogramme
+        Performance systŠme du profil
+        Processus unique du profil
+        Augmenter la priorit‚ de planification
+        Charger et d‚charger les pilotes de p‚riph‚riques
+        Cr‚er un fichier d'‚change
+        Ajuster les quotas de m‚moire pour un processus
+        Retirer l'ordinateur de la station d'accueil
+        Effectuer les tƒches de maintenance de volume
+        Emprunter l'identit‚ d'un client aprŠs l'authentification
+        Cr‚er des objets globaux
+        Changer le fuseau horaire
+        Cr‚er des liens symboliques
+        Augmenter une plage de travail de processus
+
+    Jeu de strat‚gies r‚sultant pour l'utilisateur
+    -----------------------------------------------
+
+        Installations des logiciels
+        ---------------------------
+            N/A
+
+        Scripts d'ouverture de session
+        ------------------------------
+                GPO : signatures
+                Nom :         deploy.bat
+                ParamŠtres :   
+                DerniŠre ex‚cution : 11:33:44
+
+        Scripts de fermeture de session
+        -------------------------------
+        Strat‚gies de cl‚ publique
+        --------------------------
+            N/A
+
+        ModŠles d'administration
+        ------------------------
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\ListofServers\gtest-01
+                Valeurÿ:       103, 0, 116, 0, 101, 0, 115, 0, 116, 0, 45, 0, 48, 0, 49, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\NoWarningNoElevationOnInstall
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : Certificat de s‚curit‚
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GroupPolicyMinTransferRate
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\ServerList
+                Valeurÿ:       100, 0, 100, 0, 115, 0, 105, 0, 115, 0, 50, 0, 53, 0, 45, 0, 105, 0, 109, 0, 112, 0, 59, 0, 103, 0, 116, 0, 101, 0, 115, 0, 116, 0, 45, 0, 48, 0, 49, 0, 59, 0, 103, 0, 116, 0, 115, 0, 117, 0, 100, 0, 45, 0, 48, 0, 49, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\ListofServers\ddsis25-imp
+                Valeurÿ:       100, 0, 100, 0, 115, 0, 105, 0, 115, 0, 50, 0, 53, 0, 45, 0, 105, 0, 109, 0, 112, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : SUS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\System\GroupPolicyMinTransferRate
+                Valeurÿ:       0, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : ecran veille automatique 15
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaveActive
+                Valeurÿ:       49, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\Restricted
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\ListofServers\gtsud-01
+                Valeurÿ:       103, 0, 116, 0, 115, 0, 117, 0, 100, 0, 45, 0, 48, 0, 49, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\UpdatePromptSettings
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\TrustedServers
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\InForest
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : ecran veille automatique 15
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaverIsSecure
+                Valeurÿ:       49, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : deploiimprimante_GTO_DIR_CS
+                ID de dossierÿ: Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\PackagePointAndPrintServerList
+                Valeurÿ:       1, 0, 0, 0
+                tat :       Activ‚
+
+                GPO : ecran veille automatique 15
+                ID de dossierÿ: Software\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaveTimeOut
+                Valeurÿ:       57, 0, 48, 0, 48, 0, 0, 0
+                tat :       Activ‚
+
+        Redirection de dossiers
+        -----------------------
+            N/A
+
+        Interface utilisateur d'Internet Explorer
+        -----------------------------------------
+            N/A
+
+        Connexion Internet Explorer
+        ---------------------------
+            N/A
+
+        URL d'Internet Explorer
+        -----------------------
+            N/A
+
+        S‚curit‚ d'Internet Explorer
+        ----------------------------
+            N/A
+
+        Programmes Internet Explorer
+        ----------------------------
+            N/A

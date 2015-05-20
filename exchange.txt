@@ -1,0 +1,11 @@
+Exemples de scripts qui peuvent être utilisés dans le cadre de l’administration Exchange 2007 :
+
+Récupération de la date de la dernière sauvegarde complète pour chacun des groupes de stockage :
+
+get-mailboxdatabase -server monserveur -status |
+select Storagegroup, LastFullBackup />
+Récupération des 20 boîtes aux lettres les plus volumineuses avec affichage de la taille :
+get-mailboxstatistics -Server monserveur | sort-object - property totalitemsize | select -last 20 | foreach { New- Object psobject | Add-Member -Passthru NoteProperty Displayname $_.Display name | Add-Member - Passthru NoteProperty TotalItemSize $_.TotalItem Size.Value.ToKB() }
+
+Liste des boîtes aux lettres par ordre de date de créa tion :
+Get-Mailbox | sort whencreated | FT Displayname, Whencreated Test des services requis pour le fonctionnement Exchange 2007 en fonction du rôle du serveur : Test-ServiceHealth
