@@ -183,7 +183,7 @@ Else
 		rapp=rapp & vbCr
 		End If
 		End If
-		WScript.Echo objRecordset.Fields("userPassword").Value
+	'	WScript.Echo objRecordset.Fields("userPassword").Value
     objRecordset.MoveNext
 Loop
  For i=0 To UBound(tab2)
@@ -208,18 +208,24 @@ rapp=rapp & objRecordSet.Fields("Name").Value  & vbCr
 objRecordSet.MoveNext
 Loop
 
-objCommand.CommandText = "Select Name, ADsPath from 'LDAP://OU=OU-INCONNUE,DC=sdis25,DC=lan' Where objectClass='user'" 
+objCommand.CommandText = "Select Name, ADsPath from 'LDAP://OU=OU-INCONNUE,DC=sdis25,DC=lan' Where objectClass='user'"
 Set objRecordSet = objCommand.Execute
+
+If(objRecordSet.RecordCount>0) Then
 objRecordSet.MoveFirst
+End If
 
 rapp=rapp & "-----------------------------------------------------------------------------------------------------------" & vbCr
 rapp=rapp & "Liste des Utilisateurs dans l'OU OU-INCONNUE" & vbCr
 rapp=rapp & "-----------------------------------------------------------------------------------------------------------" & vbCr
-
+If(objRecordSet.RecordCount>0) Then
 Do Until objRecordSet.EOF
 rapp=rapp & objRecordSet.Fields("Name").Value  & vbCr
 objRecordSet.MoveNext
 Loop
+Else
+rapp=rapp & "Il n'y a pas d'utilisateur" & vbCr
+End If
 
 rapp=rapp & "-----------------------------------------------------------------------------------------------------------" & vbCr
 rapp=rapp & "Liste des Utilisateurs dont la dernière connection remonte à plus de deux ans" & vbCr
